@@ -315,4 +315,44 @@ Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/a
 
 I renamed the directory to my-java-mvn-app.
 I did:
+First create New empty/blank repo via web UI (to avoid having to use a PAT
+with curl or gh).
+Then:
+/home/ron/src/java/my-java-mvn_app
+pts/0 ron@ronlap7540 :^) git init
+Initialized empty Git repository in /mnt/disk1/home/ron/src/java/my-java-mvn_app/.git/
+--2025-08-11_11:10:51_CDT--
+/home/ron/src/java/my-java-mvn_app
+pts/0 ron@ronlap7540 :^) git add .
+--2025-08-11_11:10:56_CDT--
+/home/ron/src/java/my-java-mvn_app
+pts/0 ron@ronlap7540 :^) git commit -m'intial commit'
+[master (root-commit) 08158ba] intial commit
+ 5 files changed, 702 insertions(+)
+ create mode 100644 README.ron
+ create mode 100644 README.ron.~1~
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/com/example/App.java
+ create mode 100644 src/test/java/com/example/AppTest.java
+--2025-08-11_11:11:11_CDT--
+/home/ron/src/java/my-java-mvn_app
+pts/0 ron@ronlap7540 :^) git branch -M main
+--2025-08-11_11:13:59_CDT--
+/home/ron/src/java/my-java-mvn_app
+pts/0 ron@ronlap7540 :^) git remote add origin git@github.com:ron003/my-java-mvn_app.git
+--2025-08-11_11:14:45_CDT--
+/home/ron/src/java/my-java-mvn_app
+pts/0 ron@ronlap7540 :^) git push -u origin main
+X11 forwarding request failed on channel 0
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (16/16), 5.17 KiB | 5.17 MiB/s, done.
+Total 16 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To github.com:ron003/my-java-mvn_app.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+--2025-08-11_11:27:38_CDT--
 
